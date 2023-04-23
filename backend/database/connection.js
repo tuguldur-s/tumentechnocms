@@ -1,4 +1,5 @@
 ﻿const mysql = require("mysql");
+const fs = require('fs');
 var os = require("os");
 let obj = {};
 if (os.hostname() === 'DESKTOP-AQH5C0N') {
@@ -12,23 +13,14 @@ if (os.hostname() === 'DESKTOP-AQH5C0N') {
   obj = {
     host: 'db-mysql-sgp1-66799-do-user-11118497-0.b.db.ondigitalocean.com',
     database: 'icbc',
-    user: 'testadmin',
+    user: 'icbcadmin',
     port: 25060,
     ssl: {
       //ca: fs.readFileSync("./public/contents/ca-certificate.crt"),
-      ca: fs.readFileSync("./public/contents/ca-certificate.crt"),
+      ca: fs.readFileSync("./public/ca-certificate.crt"),
     },
-    password: 'AVNS_FvgreVmM7HlicMArR2V'
+    password: 'AVNS_S-g3EBndCYL7KL2JvuJ'
   }
 }
 const db = mysql.createConnection(obj);
-
-// const db = mysql.createConnection({
-//   host: 'localhost',
-//   database: 'admin_icbc',
-//   user: 'icbc',
-//   port: 3306,
-//   password: 'Mongol8899@'
-// });
-
 module.exports = db;
