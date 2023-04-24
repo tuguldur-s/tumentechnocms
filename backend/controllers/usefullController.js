@@ -337,19 +337,19 @@ exports.shops = async (req, res) => {
             if(err) {
                 throw err;
             }
-            db.query(`SELECT FLOOR(TIME_TO_SEC(t.lost) / 60) as losttime, t.user_id, u.name, u.img, u.call_store, u.feedback, u.response FROM timer_register as t inner join users as u on t.user_id = u.id WHERE t.date LIKE CONCAT(DATE_FORMAT(NOW(), "%Y-%m"), '%') GROUP BY t.user_id`, async (err, lose) => {
+            db.query(`SELECT FLOOR(TIME_TO_SEC(t.lost) / 60) as losttime, t.user_id, u.name, u.img, u.call_store, u.feedback, u.response FROM timer_register as t inner join users as u on t.user_id = u.id WHERE t.date LIKE CONCAT(DATE_FORMAT(NOW(), '%Y-%m'), '%') GROUP BY t.user_id`, async (err, lose) => {
                 if(err) {
                     throw err;
                 }
-                db.query(`SELECT c.user_id, FLOOR(AVG((c.total * 100 / s.sale_plan_day))) as percent from cash_report as c inner join store_location as s on c.store_id = s.code WHERE c.date LIKE CONCAT(DATE_FORMAT(NOW(), "%Y-%m"), '%') GROUP BY c.user_id`, async (err, EmpSale) => {
+                db.query(`SELECT c.user_id, FLOOR(AVG((c.total * 100 / s.sale_plan_day))) as percent from cash_report as c inner join store_location as s on c.store_id = s.code WHERE c.date LIKE CONCAT(DATE_FORMAT(NOW(), '%Y-%m'), '%') GROUP BY c.user_id`, async (err, EmpSale) => {
                     if(err) {
                         throw err;
                     }
-                    db.query(`SELECT total_shop, storeId from reviewshop WHERE date LIKE CONCAT(DATE_FORMAT(NOW(), "%Y-%m"), '%')`, async (err, shopReview) => {
+                    db.query(`SELECT total_shop, storeId from reviewshop WHERE date LIKE CONCAT(DATE_FORMAT(NOW(), '%Y-%m'), '%')`, async (err, shopReview) => {
                         if(err) {
                             throw err;
                         }
-                        db.query(`SELECT FLOOR(AVG(total_user)) as percent, userId FROM reviewshop WHERE date LIKE CONCAT(DATE_FORMAT(NOW(), "%Y-%m"), '%') GROUP BY userId`, async (err, reviewUsers) => {
+                        db.query(`SELECT FLOOR(AVG(total_user)) as percent, userId FROM reviewshop WHERE date LIKE CONCAT(DATE_FORMAT(NOW(), '%Y-%m'), '%') GROUP BY userId`, async (err, reviewUsers) => {
                             if(err) {
                                 throw err;
                             }

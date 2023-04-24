@@ -10,9 +10,9 @@
 				
 				<form class="form-box" @submit.prevent="login">
 					<!-- <h2 class="mb-30">Нэвтрэх цонх</h2> -->
-					<div class="flex ml-15" align="left">
-						<img src="@/assets/images/icbc.png" style="width: 80px; height: auto;" alt="logo" class="mb-30"/>
-						<span class="ml-10"><strong>ДОТООД ЗАХИАЛГЫН<br>СИСТЕМ v1.3</strong></span>
+					<div class="flex ml-15 mb-40" align="left">
+						<img src="@/assets/images/tumentech.png" style="width: 80px; height: auto;" alt="logo" class=""/>
+						<span class="ml-10"><strong>ДОТООД ЗАХИАЛГЫН<br>СИСТЕМ v2.0</strong></span>
 					</div>
 					<!-- <p class="mb-40">Хэрэглэгчийн нэр болон нууц үгээ ашиглаж нэвтэрнэ үү</p> -->
 					
@@ -38,7 +38,7 @@
 				</form>
 			</div>
 			<div align="center" style="margin-top: -70px;">
-					<p><strong>ITLAB</strong> Developer team</p>
+					<p><strong>Tumentechno.mn</strong></p>
 			</div>
 		</div>
 

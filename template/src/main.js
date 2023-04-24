@@ -168,8 +168,8 @@ Vue.directive('affix', Affix)
 Vue.use(Element.Loading.directive);
 Vue.use(VueHtml2Canvas);
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-var AppURL = 'http://localhost:8005';	
-// var AppURL = 'https://api.icbc.mn';
+// var AppURL = 'http://localhost:8005';	
+var AppURL = 'https://api.cms.tumentechno.mn';
 Vue.prototype.$appUrl = AppURL;
 Vue.prototype.$ipV4 = localIpV4Address;
 Vue.prototype.$imgUrl = 'https://api.itlab.mn/images/product/';
