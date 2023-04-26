@@ -45,8 +45,8 @@ exports.updateUserBrands = async (req, res) => {
 }
 
 exports.sampleForm = async (req, res) => {
-  const { user } = req.body;
-  db.query(`SELECT * FROM sample_form WHERE phone = '${user.phone}'`, async (err, form) => {
+  const { lastname, firstname, phone } = req.body;
+  db.query(`SELECT * FROM sample_form WHERE phone = '${phone}'`, async (err, form) => {
     if (err) {
       throw err;
     }
@@ -57,7 +57,7 @@ exports.sampleForm = async (req, res) => {
       });
     } else {
       var n = `INSERT INTO sample_form SET ?`
-      var pst = {lastname: user.lastname, firstname: user.firstname, phone: user.phone};
+      var pst = {lastname: lastname, firstname: firstname, phone: phone};
       db.query(n, pst, async err => {
         if(err) {
           throw err;
