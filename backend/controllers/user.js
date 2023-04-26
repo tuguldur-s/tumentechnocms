@@ -44,6 +44,32 @@ exports.updateUserBrands = async (req, res) => {
   }
 }
 
+exports.sampleForm = async (req, res) => {
+  const { user } = req.body;
+  db.query(`SELECT * FROM sample_form WHERE phone = '${user.phone}'`, async (err, form) => {
+    if (err) {
+      throw err;
+    }
+
+    if (form.length > 0) {
+      res.json({
+        result: 'duplicated'
+      });
+    } else {
+      var n = `INSERT INTO sample_form SET ?`
+      var pst = {lastname: user.lastname, firstname: user.firstname, phone: user.phone};
+      db.query(n, pst, async err => {
+        if(err) {
+          throw err;
+        }
+        res.json({
+          result: 'success'
+        });
+      });
+    }
+  });
+}
+
 
 exports.getAllUser = async (req, res) => {
   db.query(`SELECT code, name from store_location`, async (err, store) => {

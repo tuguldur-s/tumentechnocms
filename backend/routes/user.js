@@ -6,6 +6,7 @@ const auth = require('../middlewares/authall');
 
 // route
 router.post("/login",catchErrors(userController.login));
+router.post("/sample-form",catchErrors(userController.sampleForm));
 router.post("/bi-login",catchErrors(userController.login2));
 router.post("/get-all-users", auth, catchErrors(userController.getAllUser));
 router.post("/update-user-store", auth, catchErrors(userController.updateUserStore));

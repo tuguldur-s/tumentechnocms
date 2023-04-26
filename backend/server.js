@@ -10,6 +10,23 @@ var timerStart = function() {
   checker = setInterval(dayChecker, 10000);
 }
 
+// const alterTable = function() {
+//   const string = `SELECT table_name as colname FROM information_schema.tables WHERE table_schema = 'icbc'`;
+//   db.query(string, (err, table) => {
+//     table.forEach(element => {
+//       const datatype = `SELECT DATA_TYPE from INFORMATION_SCHEMA. COLUMNS where table_schema = 'icbc' and table_name = '${element.colname}' and COLUMN_NAME = 'id'`
+//       db.query(datatype, (err, type) => {
+//         const alter = `ALTER TABLE ${element.colname} CHANGE id id ${type[0].DATA_TYPE} AUTO_INCREMENT NOT NULL;`;
+//         db.query(alter, err => {
+//           if (err) {
+//             throw err;
+//           }
+//         });
+//       });
+//     });
+//   });
+// }
+
 var updateTimer =  function () {
   let check = `UPDATE users SET loyalty = (CASE WHEN loyalty >= 10 THEN loyalty - 10 WHEN loyalty < 10 THEN 0 END), loyalty_at = NOW() WHERE id in (SELECT id from users WHERE loyalty_at <= DATE_ADD(loyalty_at, INTERVAL 30 DAY) AND DATEDIFF(NOW(), loyalty_at) >= 30 AND posID = 6)`;
   db.query(check, err => {
@@ -77,6 +94,8 @@ db.connect(err => {
     throw err
   }
   console.log('My sql connected');
+
+  // alterTable();
 });
 
 const app = require('./app');
