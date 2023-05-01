@@ -172,7 +172,7 @@ axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 var AppURL = 'https://api.cms.tumentechno.mn';
 Vue.prototype.$appUrl = AppURL;
 Vue.prototype.$ipV4 = localIpV4Address;
-Vue.prototype.$imgUrl = 'https://api.itlab.mn/images/product/';
+Vue.prototype.$imgUrl = 'https://api.tumentechno.mn/images/product/';
 Vue.prototype.$axios = axios;
 
 const i18n = new VueI18n({ locale: 'us', messages: i18n_messages })
