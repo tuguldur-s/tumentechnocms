@@ -150,11 +150,11 @@
 		<el-menu-item index="/policy" v-if="user.posID < 6">
 			<i class="el-icon-s-release"></i><span slot="title">Дотоод журам стандарт</span>
 		</el-menu-item>
-		<el-menu-item style="margin-top: 10%;">
+		<!-- <el-menu-item style="margin-top: 10%;">
 			<div>
                 <a href="https://www.hurdanhuruu.mn" target="_blank" class="d-block"><img class="img-fluid" src="@/assets/images/hh.jpg" alt="hurdanhuruu.mn" :style="{'border-radius': '10px', 'width': '100%', 'height': 'auto'}"></a>
             </div>
-		</el-menu-item>
+		</el-menu-item> -->
 	</el-menu>	
 	
 </template>

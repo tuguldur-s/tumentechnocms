@@ -1,16 +1,6 @@
-const nodemailer = require("nodemailer");
 const jwt = require('jwt-then');
 const db = require("../database/connection");
-
-const transporter = nodemailer.createTransport({
-    host: 'smtp.mail.mn',
-    port: 465,
-    secure: true,
-    auth: {
-      user: 'sales@icbc.mn',
-      pass: 'Sales@75117733'
-    }
-});
+const transporter = require("../database/mail");
 
 function formatDate(date) {
     return new Date(date).toISOString().slice(0, 10);
@@ -19,7 +9,7 @@ function formatDate(date) {
 async function SentEmail(token, email, url) {
 
     let mailOptions = {
-      from: '\'Зарлагын баримт\' sales@icbc.mn',
+      from: '\'Зарлагын баримт\' tumentechnollc@gmail.com',
       to: `${email}`,
       subject: 'Зарлагын баримт',
       html: `<table style="width: 100%; padding-left: 20px; padding-right: 20px;" cellspacing="0" cellpadding="0">
@@ -40,7 +30,7 @@ async function SentEmail(token, email, url) {
       </tr>
       <tr>
         <td colspan="3" style="height: 50px; background-color: #f1f0f6;">
-          <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>iCBC</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
+          <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>tumentechno.mn</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
         </td>
       </tr>
       </table>`

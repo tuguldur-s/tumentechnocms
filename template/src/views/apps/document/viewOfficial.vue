@@ -45,7 +45,7 @@
                         <div align="center" class="mt-20">
                             <img src="@/assets/images/Pstamp.png" alt="stamp" style="width: 365px; height: auto; vertical-align: middle;" :hidden="!switchs.stamp">
                             <div style="height: 200px;" :hidden="switchs.stamp"></div>
-                            <div style="font-size: 16px; margin-top: -140px;" id="stamp-text"><span style="margin-right: 100px;">АЙ СИ БИ СИ ХХК ЗАХИРАЛ</span><span>Л.АМАРТҮВШИН</span></div>
+                            <div style="font-size: 16px; margin-top: -140px;" id="stamp-text"><span style="margin-right: 100px;">ТҮМЭН ТЕХНО ХХК ЗАХИРАЛ</span><span>Л.АМАРТҮВШИН</span></div>
                         </div>
                     </div>
 					</div>
@@ -87,7 +87,7 @@
             <div align="center" class="mt-20">
 				<img src="@/assets/images/Pstamp.png" alt="stamp" style="width: 300px; height: auto; vertical-align: middle;" :hidden="!switchs.stamp">
 				<div style="height: 200px;" :hidden="switchs.stamp"></div>
-				<div style="font-size: 16px; margin-top: -120px;" id="stamp-text"><span style="margin-right: 100px;">АЙ СИ БИ СИ ХХК ЗАХИРАЛ</span><span>Л.АМАРТҮВШИН</span></div>
+				<div style="font-size: 16px; margin-top: -120px;" id="stamp-text"><span style="margin-right: 100px;">ТҮМЭН ТЕХНО ХХК ЗАХИРАЛ</span><span>Л.АМАРТҮВШИН</span></div>
 			</div>
 		</div>
 

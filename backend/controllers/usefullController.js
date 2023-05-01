@@ -1,13 +1,8 @@
-const nodemailer = require("nodemailer");
 const fs = require('fs');
 const url = require('url'); 
 var macaddress = require('macaddress');
 const db = require("../database/connection");
-
-const sha256 = require("js-sha256");
-const jwt = require('jwt-then');
-const { userInfo } = require("os");
-const { ESRCH, DH_UNABLE_TO_CHECK_GENERATOR } = require("constants");
+const transporter = require("../database/mail");
 
 exports.addCompany = async (req, res) => {
     const { company } = req.body;

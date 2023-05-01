@@ -120,7 +120,7 @@
 					</tr>
 					<tr>
 						<td align="right" style="padding-right: 15px;">ХҮЛЭЭН АВАГЧ: </td>
-						<td><strong>АЙ СИ БИ СИ ХХК</strong></td>
+						<td><strong>ТҮМЭН ТЕХНО ХХК</strong></td>
 					</tr>
 				</table>
                  <div class="mt-5"><span :style="{'font-weight': '700'}">АНХААРУУЛГА</span> Төлбөрийг дансанд шилжүүлсэн тохиолдолд <span :style="{'font-weight': '700'}">ажлын цагийн <br> 30-60 минутанд</span> шалгагдаж баталгаажих болно.</div>

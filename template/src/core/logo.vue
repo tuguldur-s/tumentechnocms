@@ -4,7 +4,7 @@
 		<img class="image-logo" src="@/assets/images/sm-logo2.png" alt="logo"/>
 		<div class="app-name" @click="goto('/products')" :style="{'font-size': '12px'}">
 		<!-- <img class="image-logo" src="@/assets/images/santahat.png" style="position: absolute; right: 30px; top: 5px;" alt="logo"/> -->
-		<span><strong>ДОТООД ЗАХИАЛГЫН<br>СИСТЕМ v1.3</strong></span>
+		<span><strong>ДОТООД ЗАХИАЛГЫН<br>СИСТЕМ</strong></span>
 		</div>
 		<button class="collapse-nav" @click="collapseNavToggle">
 			<i class="mdi mdi-menu"></i>

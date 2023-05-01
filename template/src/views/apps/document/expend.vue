@@ -33,7 +33,7 @@
 								</div> -->
 								<div class="title" align="right">
 									<p style="font-size: 2.2em; font-weight: 500;">ЗАРЛАГЫН БАРИМТ</p>
-									<!-- <p><strong>Ай Си Би Си ХХК</strong></p> -->
+									<!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
 									<table style="line-height: normal; margin-top: 7px; font-size: 14px;">
 										<tr>
 											<td><strong>Баримтын дугаар: </strong></td>
@@ -63,7 +63,7 @@
 										</tr>
 										<tr>
 											<td><strong>Байгууллагын нэр: </strong></td>
-											<td>Ай Си Би Си ХХК</td>
+											<td>ТҮМЭН ТЕХНО ХХК</td>
 										</tr>
 										<tr>
 											<td><strong>Регистрийн дугаар: </strong></td>
@@ -173,7 +173,7 @@
 				</div> -->
 				<div class="title" align="right">
 					<p style="font-size: 2.2em; font-weight: 500;">ЗАРЛАГЫН БАРИМТ</p>
-                    <!-- <p><strong>Ай Си Би Си ХХК</strong></p> -->
+                    <!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
                     <table style="line-height: normal; margin-top: 7px; font-size: 14px;">
                         <tr>
                             <td><strong>Баримтын дугаар: </strong></td>
@@ -203,7 +203,7 @@
                         </tr>
                         <tr>
                             <td><strong>Байгууллагын нэр: </strong></td>
-                            <td>Ай Си Би Си ХХК</td>
+                            <td>ТҮМЭН ТЕХНО ХХК</td>
                         </tr>
                         <tr>
                             <td><strong>Регистрийн дугаар: </strong></td>

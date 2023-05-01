@@ -1223,7 +1223,7 @@ exports.products = async (req, res) => {
                                             });
                                         });
                                     } else {
-                                        db.query(`SELECT name, model, image, sale_price, cost_price, shop_03 from product WHERE shop_03 > 0`, async (err, uid) => {
+                                        db.query(`SELECT name, model, image, sale_price, cost_price from product`, async (err, uid) => {
                                             if(err) {
                                                 throw err;
                                             }

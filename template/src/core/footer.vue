@@ -1,6 +1,6 @@
 <template>
 	<div class="footer flex align-center justify-space-between" :class="{'above':position === 'above'}">
-		<div><a href="javascript:;" class="font-weight-bold text-gray-90">iCBC LLC</a></div>
+		<div><a href="javascript:;" class="font-weight-bold text-gray-90">Tumentechno.mn</a></div>
 		<div>
 			<!-- <span><a href="javascript:;">{{new Date().getFullYear()}}</a></span> -->
 			© Бүх эрх хуулиар хамгаалагдсан

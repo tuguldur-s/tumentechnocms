@@ -29,7 +29,7 @@
                                     
                                     <div class="title" align="right">
                                         <h1>ЗАРЛАГЫН БАРИМТ</h1>
-                                        <p>Ай Си Би Си ХХК</p>
+                                        <p>ТҮМЭН ТЕХНО ХХК</p>
                                         <table>
                                             <tr>
                                                 <td align="right" style="width: 60%; padding-right: 10px;"><strong>Баримтын дугаар :</strong></td>
@@ -61,7 +61,7 @@
                                             </tr>
                                             <tr>
                                                 <td><strong>Байгууллагын нэр: </strong></td>
-                                                <td>Ай Си Би Си ХХК</td>
+                                                <td>ТҮМЭН ТЕХНО ХХК</td>
                                             </tr>
                                             <tr>
                                                 <td><strong>Регистрийн дугаар: </strong></td>

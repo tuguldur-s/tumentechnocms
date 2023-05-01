@@ -1,18 +1,8 @@
-const nodemailer = require("nodemailer");
 const fs = require('fs');
 const url = require('url'); 
 var macaddress = require('macaddress');
 const db = require("../database/connection");
-
-const transporter = nodemailer.createTransport({
-  host: 'smtp.mail.mn',
-  port: 465,
-  secure: true,
-  auth: {
-    user: 'sales@icbc.mn',
-    pass: 'Sales@75117733'
-  }
-});
+const transporter = require("../database/mail");
 
 const sha256 = require("js-sha256");
 const jwt = require('jwt-then');
@@ -310,7 +300,7 @@ exports.getBadges = async (req, res) => {
 
 async function SentNewPassword(email, password) {
   let mailOptions = {
-    from: '\'iCBC.mn\' sales@icbc.mn',
+    from: '\'tumentechno.mn\' tumentechnollc@gmail.com@gmail.com',
     to: `${email}`,
     subject: 'Нууц үг сэргээх хүсэлт',
     html: `<table style="width: 100%;" cellspacing="0" cellpadding="0">
@@ -345,7 +335,7 @@ async function SentNewPassword(email, password) {
     <tr><td colspan="3" style="height: 50px; background-color: #f1f0f6;">
     
     
-    <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>iCBC</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
+    <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>tumentechno.mn</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
     
     </td></tr>
     </table>`

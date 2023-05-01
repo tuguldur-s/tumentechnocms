@@ -28,8 +28,8 @@
 							</div> -->
 							<div class="title" align="right">
 								<p style="font-size: 2.2em; font-weight: 500;">ҮНИЙН САНАЛ</p>
-								<!-- <p>Ай Си Би Си ХХК</p> -->
-								<!-- <p><strong>Ай Си Би Си ХХК</strong></p> -->
+								<!-- <p>ТҮМЭН ТЕХНО ХХК</p> -->
+								<!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
 								<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
 									Жуулчны гудамж 4/4, Макс Цамхаг<br>
 									3 давхар 306 тоот</p>
@@ -153,8 +153,8 @@
 				</div> -->
 				<div class="title" align="right">
 					<p style="font-size: 2.2em; font-weight: 500;">ҮНИЙН САНАЛ</p>
-                    <!-- <p>Ай Си Би Си ХХК</p> -->
-                    <!-- <p><strong>Ай Си Би Си ХХК</strong></p> -->
+                    <!-- <p>ТҮМЭН ТЕХНО ХХК</p> -->
+                    <!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
                     <p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
                         Жуулчны гудамж 4/4, Макс Цамхаг<br>
                         3 давхар 306 тоот</p>

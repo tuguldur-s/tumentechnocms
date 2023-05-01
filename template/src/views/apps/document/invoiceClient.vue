@@ -27,15 +27,13 @@
 									<p>jwick@email.com<br>777-777-7777</p>
 								</div> -->
 								<div class="title" align="right">
-									<!-- <h1>НЭХЭМЖЛЭХ</h1> -->
-									<p style="font-size: 2.2em; font-weight: 500;">НЭХЭМЖЛЭХ</p>
-									<!-- <p>Ай Си Би Си ХХК</p> -->
-									<!-- <p><strong>Ай Си Би Си ХХК</strong></p> -->
-									<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
-										Жуулчны гудамж 4/4, Макс Цамхаг<br>
-										3 давхар 306 тоот</p>
-									<p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>7511 7733</strong></p>
-								</div>
+										<h1>НЭХЭМЖЛЭХ</h1>
+										<p>ТҮМЭН ТЕХНО ХХК</p>
+										<!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
+										<p class="address">Монгол улс, Улаанбаатар хот, СБД 6-р хороо<br>
+												НҮБ-н гудамж, 3-35 тоот</p>
+										<p class="address">Утас: <strong>7511 7733</strong></p>
+								</div><!--End Title-->
 							</div><!--End InvoiceTop-->
 
 							<hr>			
@@ -123,7 +121,7 @@
 													Хүлээн авагч
 												</td>
 												<td>
-													Ай Си Би Си ХХК
+													ТҮМЭН ТЕХНО ХХК
 												</td>
 											</tr>
 											<tr>
@@ -188,8 +186,8 @@
 				<div class="title" align="right">
 					<!-- <h1>НЭХЭМЖЛЭХ</h1> -->
 					<p style="font-size: 2.2em; font-weight: 500;">НЭХЭМЖЛЭХ</p>
-					<!-- <p>Ай Си Би Си ХХК</p> -->
-					<!-- <p><strong>Ай Си Би Си ХХК</strong></p> -->
+					<!-- <p>ТҮМЭН ТЕХНО ХХК</p> -->
+					<!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
 					<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
 						Жуулчны гудамж 4/4, Макс Цамхаг<br>
 						3 давхар 306 тоот</p>
@@ -282,7 +280,7 @@
 									Хүлээн авагч
 								</td>
 								<td>
-									Ай Си Би Си ХХК
+									ТҮМЭН ТЕХНО ХХК
 								</td>
 							</tr>
 							<tr>
