@@ -20,7 +20,7 @@ async function SentEmail(token, email, url) {
         <td width="25%" style="background-color: #f1f0f6;"></td>
         <td width="50%" style="background-color: #ffffff; border-radius: 30px;">
           <div style="margin-bottom: 20px; margin-top: 50px;" align="center">
-            <img src="https://api.icbc.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
+            <img src="https://api.cms.tumentechno.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
           </div>
           <div style="margin-bottom: 10px; padding-left: 50px;">Сайн байна уу?</div>
           <div style="margin-bottom: 10px; padding-left: 50px;">Зарлагын баримт илгээлээ. </div>

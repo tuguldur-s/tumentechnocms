@@ -6,8 +6,6 @@ const transporter = require("../database/mail");
 
 const sha256 = require("js-sha256");
 const jwt = require('jwt-then');
-const { userInfo } = require("os");
-const { ifError } = require("assert");
 
 exports.updateUserBrands = async (req, res) => {
   const { user, role, brands, allchecked } = req.body;
@@ -310,7 +308,7 @@ async function SentNewPassword(email, password) {
     <td width="50%" style="background-color: #ffffff; border-radius: 30px;">
     
       <div style="margin-bottom: 20px; margin-top: 50px;" align="center">
-      <img src="https://api.icbc.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
+      <img src="https://api.cms.tumentechno.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
       </div>
     
       <div align="center" style="margin-bottom: 20px; font-weight: 700;">
