@@ -29,7 +29,7 @@ async function SentEmail(token, email, url) {
           </div>
           <div style="margin-bottom: 10px; padding-left: 50px;">Сайн байна уу?</div>
           <div style="margin-bottom: 10px; padding-left: 50px;">Үнийн санал илгээлээ. </div>
-          <div style="margin-bottom: 50px; padding-left: 50px;">Хэрвээ та нэхэмжлэхээ харахыг хүсвэл <a href="https://icbc.mn/client-offer?token=${token}">энд</a> дарна уу</div>
+          <div style="margin-bottom: 50px; padding-left: 50px;">Хэрвээ та үнийн санал харахыг хүсвэл <a href="https://cms.tumentechno.mn/client-offer?token=${token}">энд</a> дарна уу</div>
         </td>
         <td width="25%" style="background-color: #f1f0f6;"></td>
       </tr>

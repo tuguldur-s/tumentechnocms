@@ -161,7 +161,7 @@
 							<div align="center" class="mt-20">
 								<img src="@/assets/images/astamp.png" alt="stamp" style="width: 180px; height: auto; vertical-align: middle;" :hidden="!invoice.stamp">
 								<div style="height: 70px;" :hidden="invoice.stamp"></div>
-								<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>П.ЛХАГВАЦЭЦЭГ</span></div>
+								<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>Р.НОРОВБАДАМ</span></div>
 							</div>
 						</div>
 					</div>
@@ -188,9 +188,8 @@
 					<p style="font-size: 2.2em; font-weight: 500;">НЭХЭМЖЛЭХ</p>
 					<!-- <p>ТҮМЭН ТЕХНО ХХК</p> -->
 					<!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
-					<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
-						Жуулчны гудамж 4/4, Макс Цамхаг<br>
-						3 давхар 306 тоот</p>
+					<p class="address">Монгол улс, Улаанбаатар хот, СБД 6-р хороо<br>
+					НҮБ-н гудамж, 3-35 тоот</p>
 					<p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>7511 7733</strong></p>
 				</div>
 			</div><!--End InvoiceTop-->
@@ -320,7 +319,7 @@
 			<div align="center" class="mt-20">
 				<img src="@/assets/images/astamp.png" alt="stamp" style="width: 180px; height: auto; vertical-align: middle;" :hidden="!invoice.stamp">
 				<div style="height: 70px;" :hidden="invoice.stamp"></div>
-				<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>П.ЛХАГВАЦЭЦЭГ</span></div>
+				<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>Р.НОРОВБАДАМ</span></div>
 			</div>
 		</div>
 

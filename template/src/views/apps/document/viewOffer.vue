@@ -127,7 +127,7 @@
 						<div align="center" class="mt-20">
 							<img src="@/assets/images/astamp.png" alt="stamp" style="width: 180px; height: auto; vertical-align: middle;" :hidden="!switchs.stamp">
 							<div style="height: 70px;" :hidden="switchs.stamp"></div>
-							<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>П.ЛХАГВАЦЭЦЭГ</span></div>
+							<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>Р.НОРОВБАДАМ</span></div>
 						</div>
 					</div>
 					</div>
@@ -252,7 +252,7 @@
 			<div align="center" class="mt-20">
 				<img src="@/assets/images/astamp.png" alt="stamp" style="width: 180px; height: auto; vertical-align: middle;" :hidden="!switchs.stamp">
 				<div style="height: 70px;" :hidden="switchs.stamp"></div>
-				<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>П.ЛХАГВАЦЭЦЭГ</span></div>
+				<div style="font-size: 14px; margin-top: -45px;" id="stamp-text"><span style="margin-right: 100px;">НЯГТЛАН БОДОГЧ</span><span>Р.НОРОВБАДАМ</span></div>
 			</div>
 		</div>
 

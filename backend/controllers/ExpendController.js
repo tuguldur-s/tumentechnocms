@@ -24,7 +24,7 @@ async function SentEmail(token, email, url) {
           </div>
           <div style="margin-bottom: 10px; padding-left: 50px;">Сайн байна уу?</div>
           <div style="margin-bottom: 10px; padding-left: 50px;">Зарлагын баримт илгээлээ. </div>
-          <div style="margin-bottom: 50px; padding-left: 50px;">Хэрвээ та нэхэмжлэхээ харахыг хүсвэл <a href="https://icbc.mn/client-expend?token=${token}">энд</a> дарна уу</div>
+          <div style="margin-bottom: 50px; padding-left: 50px;">Хэрвээ та баримт харахыг хүсвэл <a href="https://cms.tumentechno.mn/client-expend?token=${token}">энд</a> дарна уу</div>
         </td>
         <td width="25%" style="background-color: #f1f0f6;"></td>
       </tr>
