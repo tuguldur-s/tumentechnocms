@@ -9,11 +9,13 @@ const { monthsShort } = require("moment");
 
 
 exports.getImageFromItlab = async (req, res) => {
+    console.log('asdfasdf=====');
     var config = {
         method: 'post',
-        url: 'https://api.itlab.mn/api/product/get-product-image',
+        // url: 'https://api.tumentechno.mn/api/product/get-product-image',
+        url: 'http://localhost:8015/api/product/get-product-image',
         headers: { 
-          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTYyMDI3NjUxMn0.U66CWWvUUSizBqab6YqzINX0nyU5h-sFyCPtBoFoVdM'
+          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTY4Mjk5NzQyOH0.5EUA6mU-iaR4mALhJJK2JdRzpPbUyV5GvlCtpfWhl8M'
         }
     };
     axios(config)
