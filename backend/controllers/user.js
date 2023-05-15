@@ -297,54 +297,59 @@ exports.getBadges = async (req, res) => {
 }
 
 async function SentNewPassword(email, password) {
-  let mailOptions = {
-    from: '\'tumentechno.mn\' tumentechnollc@gmail.com@gmail.com',
-    to: `${email}`,
-    subject: 'Нууц үг сэргээх хүсэлт',
-    html: `<table style="width: 100%;" cellspacing="0" cellpadding="0">
-    <tr><td colspan="3" style="height: 50px; background-color: #f1f0f6;"></td></tr>
-    <tr>
-    <td width="25%" style="background-color: #f1f0f6;"></td>
-    <td width="50%" style="background-color: #ffffff; border-radius: 30px;">
-    
-      <div style="margin-bottom: 20px; margin-top: 50px;" align="center">
-      <img src="https://api.cms.tumentechno.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
-      </div>
-    
-      <div align="center" style="margin-bottom: 20px; font-weight: 700;">
-        Нууц үг сэргээх
-      </div>
-    
-      <div style="margin-bottom: 10px; padding-left: 50px;">
-        Сайн байна уу?
-      </div>
-    
-      <div style="margin-bottom: 10px; padding-left: 50px;">
-        Манай сайтыг ашигласан танд баярлалаа. 
-      </div>
-    
-      <div style="margin-bottom: 50px; padding-left: 50px;">
-        Таны шинэчлэгдсэн нууц үг: <b>${[password]}</b>
-      </div>
-    
-    </td>
-    <td width="25%" style="background-color: #f1f0f6;"></td>
-    </tr>
-    <tr><td colspan="3" style="height: 50px; background-color: #f1f0f6;">
-    
-    
-    <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>tumentechno.mn</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
-    
-    </td></tr>
-    </table>`
-  }
 
-  transporter.sendMail(mailOptions,  function(err, info) {
-    if(err) {
-      console.log(err);
-    } else {
-      console.log('email sent', info);
+  return new Promise((resolve, reject) => {
+    let mailOptions = {
+      from: '\'tumentechno.mn\' tumentechnollc@gmail.com@gmail.com',
+      to: `${email}`,
+      subject: 'Нууц үг сэргээх хүсэлт',
+      html: `<table style="width: 100%;" cellspacing="0" cellpadding="0">
+      <tr><td colspan="3" style="height: 50px; background-color: #f1f0f6;"></td></tr>
+      <tr>
+      <td width="25%" style="background-color: #f1f0f6;"></td>
+      <td width="50%" style="background-color: #ffffff; border-radius: 30px;">
+      
+        <div style="margin-bottom: 20px; margin-top: 50px;" align="center">
+        <img src="https://api.cms.tumentechno.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
+        </div>
+      
+        <div align="center" style="margin-bottom: 20px; font-weight: 700;">
+          Нууц үг сэргээх
+        </div>
+      
+        <div style="margin-bottom: 10px; padding-left: 50px;">
+          Сайн байна уу?
+        </div>
+      
+        <div style="margin-bottom: 10px; padding-left: 50px;">
+          Манай сайтыг ашигласан танд баярлалаа. 
+        </div>
+      
+        <div style="margin-bottom: 50px; padding-left: 50px;">
+          Таны шинэчлэгдсэн нууц үг: <b>${[password]}</b>
+        </div>
+      
+      </td>
+      <td width="25%" style="background-color: #f1f0f6;"></td>
+      </tr>
+      <tr><td colspan="3" style="height: 50px; background-color: #f1f0f6;">
+      
+      
+      <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>tumentechno.mn</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
+      
+      </td></tr>
+      </table>`
     }
+
+    resp = false;
+
+    transporter.sendMail(mailOptions,  function(err, info) {
+      if(err) {
+        resolve(false);
+      } else {
+        resolve(true);
+      }
+    });
   });
 }
 

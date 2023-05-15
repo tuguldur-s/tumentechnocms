@@ -106,7 +106,7 @@
 	<el-dialog title="Төлбөрийн мэдээлэл" :visible.sync="modals.pay" width="30%" align="center">
 		<p style="font-size: 16px;">Та ухаалаг банкны аппликэйшн хэрэглэж<br> <strong>QPAY</strong> -ээр төлнө үү</p>
 		<qrcode :text="order.detail.qrcode" align="center"></qrcode>
-		<div class="mt-20">
+		<!-- <div class="mt-20">
             <div align="center" :style="{'font-size': '18px'}">Шилжүүлгийн мэдээлэл</div>
             <div align="center" style="padding-bottom: 30px;">
 				<table>
@@ -125,7 +125,7 @@
 				</table>
                  <div class="mt-5"><span :style="{'font-weight': '700'}">АНХААРУУЛГА</span> Төлбөрийг дансанд шилжүүлсэн тохиолдолд <span :style="{'font-weight': '700'}">ажлын цагийн <br> 30-60 минутанд</span> шалгагдаж баталгаажих болно.</div>
             </div>
-        </div>
+        </div> -->
 	</el-dialog>
 
 	<div class="show-on-print" style="padding-left: 2cm; padding-top: 1.5cm; padding-right: 1.5cm;">

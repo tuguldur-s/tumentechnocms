@@ -33,7 +33,7 @@
 								<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
 									Жуулчны гудамж 4/4, Макс Цамхаг<br>
 									3 давхар 306 тоот</p>
-								<p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>7511 7733</strong></p>
+								<p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>8630 6010</strong></p>
 							</div>
 						</div><!--End InvoiceTop-->
 
@@ -158,7 +158,7 @@
                     <p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, ЧД 4-р хороо<br>
                         Жуулчны гудамж 4/4, Макс Цамхаг<br>
                         3 давхар 306 тоот</p>
-                    <p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>7511 7733</strong></p>
+                    <p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>8630 6010</strong></p>
                 </div>
 			</div><!--End InvoiceTop-->
 
@@ -276,7 +276,7 @@ export default {
         return {
             invoiceTo: {
                 company: 'ICBC',
-                register: '5489288',
+                register: '2090562',
                 phone: '75117733',
                 email: 'sales@icbc.mn'
             },

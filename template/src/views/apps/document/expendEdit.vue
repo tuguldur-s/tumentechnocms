@@ -66,7 +66,7 @@
                                             </tr>
                                             <tr>
                                                 <td><strong>Регистрийн дугаар: </strong></td>
-                                                <td>5489288</td>
+                                                <td>2090562</td>
                                             </tr>
                                         </table> 
                                     </div>
@@ -197,7 +197,7 @@ export default {
             },
             invoiceTo: {
                 company: 'ICBC',
-                register: '5489288',
+                register: '2090562',
                 phone: '75117733',
                 email: 'sales@icbc.mn'
             },

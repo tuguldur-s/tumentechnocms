@@ -44,7 +44,7 @@
 											<td v-if="invoiceTo.date !== undefined">{{invoiceTo.date.split('T')[0]}}</td>
 										</tr>
 									</table>  
-									<!-- <p class="address" style="margin-top: 10px;">Утас: <strong>7511 7733</strong></p> -->
+									<!-- <p class="address" style="margin-top: 10px;">Утас: <strong>8630 6010</strong></p> -->
 								</div>
 							</div>
 
@@ -67,7 +67,7 @@
 										</tr>
 										<tr>
 											<td><strong>Регистрийн дугаар: </strong></td>
-											<td>5489288</td>
+											<td>2090562</td>
 										</tr>
 									</table> 
 								</div>
@@ -184,7 +184,7 @@
                             <td v-if="invoiceTo.date !== undefined">{{invoiceTo.date.split('T')[0]}}</td>
                         </tr>
                     </table>  
-                    <!-- <p class="address" style="margin-top: 10px;">Утас: <strong>7511 7733</strong></p> -->
+                    <!-- <p class="address" style="margin-top: 10px;">Утас: <strong>8630 6010</strong></p> -->
                 </div>
 			</div>
 
@@ -207,7 +207,7 @@
                         </tr>
                         <tr>
                             <td><strong>Регистрийн дугаар: </strong></td>
-                            <td>5489288</td>
+                            <td>2090562</td>
                         </tr>
                     </table> 
                 </div>
@@ -308,7 +308,7 @@ export default {
         return {
             invoiceTo: {
                 company: 'ICBC',
-                register: '5489288',
+                register: '2090562',
                 phone: '75117733',
                 email: 'sales@icbc.mn'
             },

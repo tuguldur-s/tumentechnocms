@@ -33,7 +33,7 @@
 								<!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
 								<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, СБД 6-р хороо<br>
 									НҮБ-н гудамж, 3-35 тоот</p>
-								<p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>7511 7733</strong></p>
+								<p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>8630 6010</strong></p>
 							</div>
 						</div><!--End InvoiceTop-->
 
@@ -136,15 +136,7 @@
 												Регистрийн дугаар
 											</td>
 											<td>
-												5489288
-											</td>
-										</tr>
-										<tr>
-											<td>
-												Голомт банк
-											</td>
-											<td>
-												3455131183
+												2090562
 											</td>
 										</tr>
 										<tr>
@@ -152,7 +144,7 @@
 												Хаан банк
 											</td>
 											<td>
-												5429245701
+												5427046456
 											</td>
 										</tr>
 									</table>
@@ -199,7 +191,7 @@
                     <!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
 										<p class="address" style="margin-top: 7px; font-size: 12px;">Монгол улс, Улаанбаатар хот, СБД 6-р хороо<br>
 										НҮБ-н гудамж, 3-35 тоот</p>
-                    <p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>7511 7733</strong></p>
+                    <p class="address" style="margin-top: 7px; font-size: 12px;">Утас: <strong>8630 6010</strong></p>
                 </div>
 			</div><!--End InvoiceTop-->
 
@@ -301,15 +293,7 @@
 									Регистрийн дугаар
 								</td>
 								<td>
-									5489288
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Голомт банк
-								</td>
-								<td>
-									3455131183
+									2090562
 								</td>
 							</tr>
 							<tr>
@@ -317,7 +301,7 @@
 									Хаан банк
 								</td>
 								<td>
-									5429245701
+									5427046456
 								</td>
 							</tr>
 						</table>
@@ -357,7 +341,7 @@ export default {
         return {
             invoiceTo: {
                 company: 'ICBC',
-                register: '5489288',
+                register: '2090562',
                 phone: '75117733',
                 email: 'sales@icbc.mn'
             },

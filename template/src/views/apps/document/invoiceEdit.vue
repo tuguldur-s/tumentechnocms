@@ -24,7 +24,7 @@
                                         <!-- <p><strong>ТҮМЭН ТЕХНО ХХК</strong></p> -->
                                         <p class="address">Монгол улс, Улаанбаатар хот, СБД 6-р хороо<br>
                                             НҮБ-н гудамж, 3-35 тоот</p>
-                                        <p class="address">Утас: <strong>7511 7733</strong></p>
+                                        <p class="address">Утас: <strong>8630 6010</strong></p>
                                     </div><!--End Title-->
                                 </div><!--End InvoiceTop-->
 
@@ -191,7 +191,7 @@ export default {
             },
             invoiceTo: {
                 company: 'ICBC',
-                register: '5489288',
+                register: '2090562',
                 phone: '75117733',
                 email: 'sales@icbc.mn'
             },

@@ -112,7 +112,7 @@
 				<span slot="title">Илгээгдсэн</span>
 			</el-menu-item>
 		</el-submenu>
-		<el-submenu v-if="user.posID == 1 || user.posID == 2 || user.posID == 4" index="/official" popper-class="main-navigation-submenu">
+		<!-- <el-submenu v-if="user.posID == 1 || user.posID == 2 || user.posID == 4" index="/official" popper-class="main-navigation-submenu">
 			<template slot="title">
 				<i class="mdi mdi-clipboard-text"></i><span>Албан бичиг</span>
 			</template>
@@ -122,7 +122,7 @@
 			<el-menu-item index="/officials">
 				<span slot="title">Жагсаалт</span>
 			</el-menu-item>
-		</el-submenu>
+		</el-submenu> -->
 		<el-menu-item index="/rma">
 			<i class="mdi mdi-alert-decagram"></i><span slot="title">RMA</span>
 		</el-menu-item>

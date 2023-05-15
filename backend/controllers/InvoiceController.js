@@ -12,42 +12,46 @@ function formatDate(date) {
 
 async function SentEmail(token, email, url) {
 
-    let mailOptions = {
-      from: '\'Нэхэмжлэх\' tumentechnollc@gmail.com',
-      to: `${email}`,
-      subject: 'Нэхэмжлэх',
-      html: `<table style="width: 100%; padding-left: 20px; padding-right: 20px;" cellspacing="0" cellpadding="0">
-      <tr>
-        <td colspan="3" style="height: 50px; background-color: #f1f0f6;"></td>
-      </tr>
-      <tr>
-        <td width="25%" style="background-color: #f1f0f6;"></td>
-        <td width="50%" style="background-color: #ffffff; border-radius: 30px;">
-          <div style="margin-bottom: 20px; margin-top: 50px;" align="center">
-            <img src="https://api.cms.tumentechno.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
-          </div>
-          <div style="margin-bottom: 10px; padding-left: 50px;">Сайн байна уу?</div>
-          <div style="margin-bottom: 10px; padding-left: 50px;">Нэхэмжлэх илгээлээ. </div>
-          <div style="margin-bottom: 50px; padding-left: 50px;">Хэрвээ та нэхэмжлэхээ харахыг хүсвэл <a href="https://cms.tumentechno.mn/client-invoice?token=${token}">энд</a> дарна уу</div>
-        </td>
-        <td width="25%" style="background-color: #f1f0f6;"></td>
-      </tr>
-      <tr>
-        <td colspan="3" style="height: 50px; background-color: #f1f0f6;">
-          <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>tumentechno.mn</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
-        </td>
-      </tr>
-      </table>`
-    }
+
+    return new Promise((resolve, reject) => {
+        let mailOptions = {
+        from: '\'Нэхэмжлэх\' tumentechnollc@gmail.com',
+        to: `${email}`,
+        subject: 'Нэхэмжлэх',
+        html: `<table style="width: 100%; padding-left: 20px; padding-right: 20px;" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="3" style="height: 50px; background-color: #f1f0f6;"></td>
+        </tr>
+        <tr>
+            <td width="25%" style="background-color: #f1f0f6;"></td>
+            <td width="50%" style="background-color: #ffffff; border-radius: 30px;">
+            <div style="margin-bottom: 20px; margin-top: 50px;" align="center">
+                <img src="https://api.cms.tumentechno.mn/images/local/logo/invoice_logo.png" style="width: 100px; height: auto;">
+            </div>
+            <div style="margin-bottom: 10px; padding-left: 50px;">Сайн байна уу?</div>
+            <div style="margin-bottom: 10px; padding-left: 50px;">Нэхэмжлэх илгээлээ. </div>
+            <div style="margin-bottom: 50px; padding-left: 50px;">Хэрвээ та нэхэмжлэхээ харахыг хүсвэл <a href="https://cms.tumentechno.mn/client-invoice?token=${token}">энд</a> дарна уу</div>
+            </td>
+            <td width="25%" style="background-color: #f1f0f6;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 50px; background-color: #f1f0f6;">
+            <div align="center" style="margin-top: 10px; margin-bottom: 50px;">© <a href="javascript:;"><strong>tumentechno.mn</strong></a> - Бүх эрх хуулиар хамгаалагдсан</div>
+            </td>
+        </tr>
+        </table>`
+        }
     
-  
-    transporter.sendMail(mailOptions, async  function(err, info) {
-      if(err) {
-        console.log(err);
-      } else {
-        console.log('email sent', info);
-      }
-    });
+        resp = false;
+    
+        transporter.sendMail(mailOptions,  function(err, info) {
+          if(err) {
+            resolve(false);
+          } else {
+            resolve(true);
+          }
+        });
+      });
   
 }
 
