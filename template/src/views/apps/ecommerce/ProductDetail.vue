@@ -424,7 +424,7 @@ export default {
 						src: url, x: 0, y: 0
 					}])
 				.then(b64 => {	
-					convertImageUrlToBase64('https://api.itlab.mn/images/product/' + rts.product.detail['image' + i], async function (product) {
+					convertImageUrlToBase64('https://api.tumentechno.mn/images/product/' + rts.product.detail['image' + i], async function (product) {
 						mergeImages([
 							{
 								src: b64
@@ -478,7 +478,7 @@ export default {
 				if(token) {
 					this.$axios({
 						method: 'post',
-						url: 'https://api.itlab.mn/api/admin/product-detail',
+						url: 'https://api.tumentechno.mn/api/admin/product-detail',
 						headers: {
 							"Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTYyODY1NTcxNX0.cLwwj94A4nJL64lxjW6Lp3ly43kQZ4HHTo5mc_3kymU`
 						}, 
@@ -587,7 +587,7 @@ export default {
 			if(this.template.showLogo == false) {
 				if( this.template.showDesc == false ) {
 					for (let i = 1; i < 5; i++) {
-						convertImageUrlToBase64('https://api.itlab.mn/images/product/' + this.product.detail['image' + i], async function (url1) {
+						convertImageUrlToBase64('https://api.tumentechno.mn/images/product/' + this.product.detail['image' + i], async function (url1) {
 							convertImageUrlToBase64(rts.$appUrl + '/images/local/template/' + rts.template.image, async function (url2) {
 								mergeImages([
 									{
@@ -628,9 +628,9 @@ export default {
 			} else {
 				var rts = this;
 				for (let i = 1; i < 5; i++) {
-					convertImageUrlToBase64('https://api.itlab.mn/images/product/' + rts.product.detail['image' + i], async function (product) {
+					convertImageUrlToBase64('https://api.tumentechno.mn/images/product/' + rts.product.detail['image' + i], async function (product) {
 						convertImageUrlToBase64(rts.$appUrl + '/images/local/template/' + rts.template.image, async function (frame) {
-							convertImageUrlToBase64('https://api.itlab.mn/images/brand/' + rts.MoreDetail[0].images, async function (logo) {
+							convertImageUrlToBase64('https://api.tumentechno.mn/images/brand/' + rts.MoreDetail[0].images, async function (logo) {
 								mergeImages([
 									{
 										src: frame
@@ -757,7 +757,7 @@ export default {
 						src: url, x: 0, y: 0
 					}])
 				.then(b64 => {	
-					convertImageUrlToBase64('https://api.itlab.mn/images/product/' + rts.product.detail.image1, async function (product) {
+					convertImageUrlToBase64('https://api.tumentechno.mn/images/product/' + rts.product.detail.image1, async function (product) {
 						mergeImages([
 							{
 								src: b64

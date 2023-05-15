@@ -584,7 +584,7 @@ export default {
                 if(token) {
                     this.$axios({
                         method: 'post',
-                        url: `https://api.itlab.mn/api/product/delete-category`,
+                        url: `https://api.tumentechno.mn/api/product/delete-category`,
                         headers: {
                             "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTYyODIyNTM0OX0.to9xLmJEjceMPv0GEu-yThqtLlNHDwAh8fE_DtVfNIs`
                         },
@@ -656,7 +656,7 @@ export default {
                 if(token) {
                     this.$axios({
                         method: 'post',
-                        url: `https://api.itlab.mn/api/product/delete-sub-category`,
+                        url: `https://api.tumentechno.mn/api/product/delete-sub-category`,
                         headers: {
                             "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTYyODIyNTM0OX0.to9xLmJEjceMPv0GEu-yThqtLlNHDwAh8fE_DtVfNIs`
                         },
@@ -728,7 +728,7 @@ export default {
                 if(token) {
                     this.$axios({
                         method: 'post',
-                        url: `https://api.itlab.mn/api/product/delete-brands`,
+                        url: `https://api.tumentechno.mn/api/product/delete-brands`,
                         headers: {
                             "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzksImlhdCI6MTYyODIyNTM0OX0.to9xLmJEjceMPv0GEu-yThqtLlNHDwAh8fE_DtVfNIs`
                         },
