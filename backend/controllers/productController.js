@@ -345,7 +345,7 @@ exports.editProduct = async (req, res) => {
         if(colors[k] !== undefined) {
             color_name = colors[k];
         }
-        let q = `UPDATE product SET name = '${product.name}', model = '${product.model}', color_name = '${color_name}', code = '${product.code}', type = ${product.type}, category_sub_id = ${product.category_sub_id}, brand = ${product.brand}, cost_price = ${product.cost_price}, wholesale_price = ${product.wholesale_price}, sale_price = ${product.sale_price}, description = '${product.description}' WHERE id = ${product.id}`;
+        let q = `UPDATE product SET name = '${product.name}', remain = '${product.remain}', model = '${product.model}', color_name = '${color_name}', code = '${product.code}', type = ${product.type}, category_sub_id = ${product.category_sub_id}, brand = ${product.brand}, cost_price = ${product.cost_price}, wholesale_price = ${product.wholesale_price}, sale_price = ${product.sale_price}, description = '${product.description}' WHERE id = ${product.id}`;
         db.query(q, async err => {
             if(err) {
                 throw err;

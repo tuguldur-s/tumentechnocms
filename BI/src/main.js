@@ -160,7 +160,7 @@ var AppURL = 'http://192.168.0.111:8005';
 // var AppURL = 'https://api.icbc.mn';
 Vue.prototype.$appUrl = AppURL;
 Vue.prototype.$ipV4 = localIpV4Address;
-Vue.prototype.$imgUrl = 'https://api.itlab.mn/images/product/';
+Vue.prototype.$imgUrl = 'https://api.tumentechno.mn/images/product/';
 Vue.prototype.$axios = axios;
 
 const i18n = new VueI18n({ locale: 'us', messages: i18n_messages })

@@ -118,8 +118,11 @@
 					<el-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="mt-10">
 						<el-input placeholder="Бүтээгдэхүүний модель" v-model="product.detail.model" clearable> </el-input>
 					</el-col>
-					<el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="mt-10">
+					<el-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="mt-10">
 						<el-input placeholder="Бар код" v-model="product.detail.code" clearable> </el-input>
+					</el-col>
+					<el-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="mt-10">
+						<el-input placeholder="Үлдэгдэл" v-model="product.detail.remain" clearable> </el-input>
 					</el-col>
 					<el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="mt-10">
 						<el-input placeholder="Тайлбар" type="textarea" :rows="5" v-model="product.detail.description" clearable> </el-input>
@@ -819,8 +822,10 @@ export default {
                                 message: `<strong>${rts.product.detail.model}</strong> шинэчлэгдлээ`,
                                 type: 'success'
                             });
-							rts.modals.drawer = false;
+														rts.modals.drawer = false;
                         }
+
+												rts.getInfo();
                             
                     }).catch(error => {
                         rts.loading = false;
